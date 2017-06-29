@@ -6,7 +6,7 @@
 
 const cluster = require('cluster');
 const log = require('debug')('boot:master');
-cosnt workerCount = process.env.WORKER_COUNT || 2;
+const workerCount = process.env.WORKER_COUNT || 2;
 
 // Defines what each worker needs to run
 // In this case, it's app.js a simple node http app
@@ -25,7 +25,7 @@ function forkNewWorkers() {
 }
 
 // A list of workers queued for a restart
-const workersToStop = [];
+let workersToStop = [];
 
 // Stops a single worker
 // Gives 60 seconds after disconnect before SIGTERM
