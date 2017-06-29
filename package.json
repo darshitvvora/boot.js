@@ -1,0 +1,27 @@
+{
+  "name": "boot.js",
+  "version": "1.0.0",
+  "description": " zero-downtime node.js app runner",
+  "main": "boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/quezx/boot.js.git"
+  },
+  "keywords": [
+    "boot",
+    "zerotime-deploy",
+    "cluster"
+  ],
+  "author": "Yogesh Choudhary <yogesum@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quezx/boot.js/issues"
+  },
+  "homepage": "https://github.com/quezx/boot.js#readme",
+  "dependencies": {
+    "debug": "^2.6.8"
+  }
+}
